@@ -3,7 +3,7 @@
 body, html { height: 100%; }
 
 body {
-	font-size: 12px;
+	font-size: 15px;
 	line-height: 22px;
 	font-family: arial, sans-serif;
 	color: #828282;
@@ -46,12 +46,14 @@ textarea { overflow: auto; }
 
 .header-inner { position: relative;  background: url(images/header-cnt.png) no-repeat center 0;  }
 
-.header-cnt #logo { width: 397px; font-size: 0; line-height: 0;  }
-.header-cnt #logo a { height: 134px; background: url(images/logo.png) no-repeat 0 0; text-indent: -4000px; display: block;  }
+.header-cnt #logo { width: 397px; font-size: 60px; line-height: 1;	}
+.header-cnt #logo a { height: 134px; display: block; color: #efefef; }
+.header-cnt #logo2 a { color: #efefef;}
+.header-cnt a:hover {text-decoration: none;}
 .header-cnt { width: 422px; padding-top: 30px; }
 .header-cnt h2 { font-size: 74px; line-height: 83px; color: #fff; text-shadow: rgba(0,0,0,0.5) 0px 1px 2px;  font-weight: bolder; } 
 .header-cnt h3 { font-size: 40px; padding-bottom: 8px; line-height: 50px; font-weight: normal;  color: #fff; text-shadow: rgba(0,0,0,0.5) 0px 1px 2px; font-family: tahoma, arial, helvetica, serif;  } 
-.header-cnt p { color: #fff; text-shadow: rgba(0,0,0,0.5) 0px 1px 2px; padding-bottom: 10px; }
+.header-cnt p { color: #fff; text-shadow: rgba(0,0,0,0.5) 0px 1px 2px; padding: 25px 0; }
 .header-cnt a.blue-btn { background: url(images/blue-btn.png) no-repeat 0 -75px; position: relative; bottom: -30px; z-index: 100; width: 198px; height: 70px; text-align: center; line-height: 56px; display: block; color: #fff; text-shadow: rgba(0,0,0,0.5) 0px 1px 1px; font-size: 16px; font-family: 'Ubuntu', sans-serif; font-weight: 700;   }
 .header-cnt a.blue-btn:hover  { text-decoration: none; background-position: 0 0px; }
 
@@ -64,7 +66,7 @@ textarea { overflow: auto; }
 .main { padding: 66px 0 50px; position: relative; height: 100%; }
 .main span.shadow-top { background: url(images/main-shadow.png) repeat-x 0 0;  top: 0; left: 0; position: absolute; width: 100%;  height: 46px; z-index: 20; display: block;  }
 .main h2 { font-size: 28px; color: #2d2d2d; line-height: 28px; font-family: 'Ubuntu', sans-serif; font-weight: 500; padding-bottom: 12px; }
-.main h3 { font-size: 20px; color: #2d2d2d; line-height: 22px; font-family: 'Ubuntu', sans-serif; font-weight: 500; padding-bottom: 8px; }
+.main h3 { font-size: 20px; color: #2d2d2d; line-height: 22px; font-family: 'Ubuntu', sans-serif; font-weight: 500; padding-bottom: 20px; }
 .main section { background: url(images/section-shadow.png) no-repeat 0 bottom; padding-top: 40px; padding-bottom: 23px;  }
 .main section:last-of-type { background: transparent; }
 
@@ -81,9 +83,9 @@ textarea { overflow: auto; }
 .main .content .cnt { overflow: hidden; height: 100%; }
 .main section.blog { padding-bottom: 60px; }
 
-.main .sidebar { width: 282px;  float: right; }
+.main .sidebar { width: 220px;  float: right; }
 .main .sidebar ul { list-style: none; list-style-position: outside; }
-.main .sidebar ul li { position: relative; padding-left: 84px; background: url(images/sidebar-list-border.png) no-repeat 0 bottom; padding-bottom: 15px; margin-bottom: -13px; min-height: 72px; }
+.main .sidebar ul li { position: relative; background: url(images/sidebar-list-border.png) no-repeat 0 bottom; padding-bottom: 15px; margin-bottom: -13px; min-height: 35px; }
 .main .sidebar ul li .img-holder { position: absolute; top: 6px; left: 0px; width: 66px; height: 48px; padding: 2px; border: 1px solid #d7d7d6; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; }
 .main .sidebar ul li img { width: 66px; height: 48px; }
 .main .sidebar ul li .mobile { font-style: normal; display: none; }
@@ -105,7 +107,7 @@ html, body { height: 100%; }
 #footer, #footer-push { height: 286px; }
 #footer span.shadow-bottom { background: url(images/main-shadow-bottom.png) repeat-x 0 0;  top: -46px; left: 0; position: absolute; width: 100%; height: 46px; z-index: 20; display: block;  }
 
-#footer { border-top: 1px solid #fff; position: relative; height: 285px; }
+#footer { border-top: 1px solid #fff; position: relative; height: 0; }
 .footer-cols { background: url(images/footer-cols.png) repeat-x 0 0; padding: 26px 0; }
 .footer-cols .col { float: left; width: 226px; padding-right: 24px; }
 .footer-cols .col.last { padding-right: 0; }
@@ -138,8 +140,8 @@ html, body { height: 100%; }
 	.shell { max-width: 768px; }
 	
 	#header { background: url(images/header-tablet.png) repeat-x 0 0; height: 257px; }
-	.header-cnt #logo { width: 277px; font-size: 0; line-height: 0; }
-	.header-cnt #logo a { height: 93px; background: url(images/logo-tablet.png) no-repeat 0 0; text-indent: -4000px; display: block;  }
+	.header-cnt #logo { width: 277px; font-size: 1; line-height: 1; }
+	.header-cnt #logo a { height: 93px; text-indent: -100px; display: block;  }
 
 	.top-nav span.top-nav-shadow { display: none; }
 	.top-nav ul { font-size: 14px; }
@@ -151,6 +153,8 @@ html, body { height: 100%; }
 	.header-cnt { width: 295px; }
 	.header-cnt h2 { font-size: 56px; line-height: 60px; }
 	.header-cnt h3 { font-size: 30px; line-height: 32px; }
+	.header-cnt #logo { font-size: 40px;}
+	.header-cnt #logo2 { line-height: 1;}
 	.header-cnt p .desktop { display: none; }
 	.header-cnt p .mobile { display: block; }
 	.header-cnt a.blue-btn { bottom: -60px; }
@@ -172,7 +176,7 @@ html, body { height: 100%; }
 	.main .content { width: 100%; float: none; display: block; padding-bottom: 40px; }
 	
 	.main .sidebar { width: 100%; float: none; display: block; }
-	.main .sidebar ul li { margin: 0 0 0 0; background: url(images/tablet-section-shadow.png) no-repeat center bottom; display: block; min-height: 70px; }
+	.main .sidebar ul li { margin: 0 0 0 0; background: url(images/tablet-section-shadow.png) no-repeat center bottom; display: block; min-height: 35px; }
 	.main .sidebar ul li .mobile { display: inline;  }
 	.main .sidebar a.view { margin-right: 20px;  }
 
@@ -193,8 +197,8 @@ html, body { height: 100%; }
 	a.view { background: url(images/bullet.png) no-repeat 0 8px; padding-left: 8px; font-size: 10px; float: right;  }
 	#header { background: url(images/header-@2x.png) repeat-x 0 0; height: 218px; width: 100%; }
 
-	.header-cnt #logo { width: 280px; font-size: 0; line-height: 0; margin-bottom: 8px; }
-	.header-cnt #logo a { height: 94px; background: url(images/logo-@2x.png) no-repeat 0 0; text-indent: -4000px; display: block;  }
+	.header-cnt #logo { width: 280px; font-size: 40px; line-height: 1; margin-bottom: 8px; }
+	.header-cnt #logo a { height: 94px; display: block;  }
 	
 	.top-nav { position: relative; z-index: 1001; background: #fcfcff; height: 48px; margin: 7px; border: 1px solid #9ad0e2; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; }
 	.top-nav span.top-nav-shadow { display: none; }
@@ -240,12 +244,12 @@ html, body { height: 100%; }
 	.main .cols .col img { float: left;  }
 	.main .content { width: 100%; float: none; display: block; padding-bottom: 40px; }
 	.main .content img.alignleft { margin-right: 8px; float: none; display: block; margin: 0 auto 30px auto;  }
-	.main .content p { font-size: 11px; line-height: 18px; }
+	.main .content p { font-size: 15px; line-height: 18px; }
 	.main .content ul li { font-size: 11px; padding-bottom: 0; line-height: 18px;  }
 	.main .content ul li { background-position: 0 7px !important; display: block; }
 
 	.main .sidebar { width: 100%; float: none; display: block; padding-right: 0; }
-	.main .sidebar ul li { margin: 0 0 0 0; background: url(images/mobile-section-shadow.png) no-repeat center bottom; display: block; min-height: 70px; }
+	.main .sidebar ul li { margin: 0 0 0 0; background: url(images/mobile-section-shadow.png) no-repeat center bottom; display: block; min-height: 35px; }
 	.main .sidebar ul li .mobile { display: inline; }
 	.main .sidebar a.view { margin-right: 20px; }
 	
