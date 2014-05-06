@@ -1,39 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0" />
-	<title>Amrit-Prithvi Trust</title>
-	<link rel="shortcut icon" type="image/x-icon" href="css/images/favicon.ico" />
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all" />
-	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css' />
-	
-	<script src="js/jquery-1.8.0.min.js" type="text/javascript"></script>
-	<!--[if lt IE 9]>
-		<script src="js/modernizr.custom.js"></script>
-	<![endif]-->
-	<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
-	<script src="js/functions.js" type="text/javascript"></script>
-</head>
-<body>
-	<div id="wrapper">
-		
+<?php include('head.php') ?>		
+
 		<!-- top-nav -->
-		<nav class="top-nav">
-			<div class="shell">
-				<a href="#" class="nav-btn">HOMEPAGE<span></span></a>
-				<span class="top-nav-shadow"></span>
-				<ul>
-					<li class="active"><span><a href="#">Home</a></span></li>
-					<li><span><a href="#">Trust Funds</a></span></li>
-					<li><span><a href="#">Activities</a></span></li>
-					<li><span><a href="#">Our Members</a></span></li>
-					<li><span><a href="#">Contact Us</a></span></li>
-					<li><span><a href="#">Gallery</a></span></li>
-				</ul>
-			</div>
-		</nav>
+		<?php 
+			$active = 'home';
+			include('top_nav.php') ?>
 		<!-- end of top-nav -->
 
 		<!-- header -->
@@ -121,46 +91,7 @@
 						</div>
 						<!-- end of content -->
 
-						<!-- sidebar -->
-						<aside class="sidebar">
-							<!-- widget -->
-							<div class="widget">
-								<h3>Executive Members</h3>
-								<ul>
-									<li class="last">
-										Prof. Dr. Pushpa Shrestha
-										<span>Chairperson</span>
-									</li>
-									<li class="last">
-										Mr. Prakash Man Shrestha
-										<span>Secretary</span>
-									</li>
-									<li class="last">
-										Mr. Vikash Man Shrestha
-										<span>Treasurer</span>
-									</li>
-									<li class="last">
-										Mrs. Jayenti Shrestha
-										<span>Assistant Secretary</span>
-									</li>
-									<li class="last">
-										Mrs. Prami Shrestha
-										<span>Assistant Treasurer</span>
-									</li>
-									<li class="last">
-										Mrs. Mala Rajbhandari Shrestha
-										<span>Member</span>
-									</li>
-									<li class="last">
-										Mr. Pranij Man Shrestha
-										<span>Member</span>
-									</li>
-								</ul>
-								<div class="cl">&nbsp;</div>
-							</div>
-							<!-- end of widget -->
-						</aside>
-						<!-- end of sidebar -->
+						<!-- sidebar --><?php include('aside.php') ?><!-- end of sidebar -->
 						<div class="cl">&nbsp;</div>
 					</section>	
 				</div>
@@ -177,32 +108,5 @@
 	<!-- end of footer-push -->
 	
 	<!-- end of wrapper -->
-	<!-- footer -->
-	<div  id="footer">
-		<span class="shadow-bottom"></span>
-		<div class="footer-bottom">
-			<div class="shell">
-				<nav class="footer-nav">
-					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Services</a></li>
-						<li><a href="#">Projects</a></li>
-						<li><a href="#">Solutions</a></li>
-						<li><a href="#">Jobs</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Contacts</a></li>
-					</ul>
-					<div class="cl">&nbsp;</div>
-				</nav>
-				<p class="copy">
-					&copy; Copyright 2012<span>|</span> Design by 
-					<a href="http://chocotemplates.com" target"_blank">ChocoTemplates.com</a>
-				</p>
-			</div>
-		</div>
-	</div>
-	<!-- end of footer -->
 
-</body>
-</html>
+<?php include('foot.php') ?>

@@ -74,10 +74,10 @@ textarea { overflow: auto; }
 .main .testimonial p { padding-bottom: 10px; }
 .main .testimonial p strong { font-size: 28px; font-family: georgia, serif; position: relative; top: 10px; left: -5px; }
 
-.main .content { width: 615px; float: left; }
+.main .content { width: 700px; float: left; }
 .main .content ul { list-style: none; list-style-position: outside; padding-top: 8px;  }
 .main .content ul li { padding-left: 8px; background: url(images/bullet.png) no-repeat 0 9px; padding-bottom: 5px;  }
-.main .content ul li a { text-decoration: underline; }
+.main .content ul li a { text-decoration: none; }
 .main .content ul li a:hover { text-decoration: none; }
 .main .content img.alignleft { margin-right: 22px; }
 .main .content .cnt { overflow: hidden; height: 100%; }
@@ -130,6 +130,17 @@ html, body { height: 100%; }
 .footer-bottom p.copy span  { padding: 0 9px;  }
 .footer-bottom p.copy a { text-decoration: underline; }
 .footer-bottom p.copy a:hover { text-decoration: none; }
+
+
+
+form { background-color: #FAFAFA; border: 1px solid #F2F2F2; margin: 10px; padding: 5px;}
+input { border: 1px solid #EEEEEE; color: #777777; font: 1em Verdana,sans-serif; padding: 3px 5px; }
+label { display: block; font-weight: bold; margin: 5px 0; }
+textarea { border: 1px solid #EEEEEE; color: #777777; display: block; font: 1em Verdana,sans-serif; height: 100px; padding: 3px 5px; width: 300px; }
+input.button { background: none repeat scroll 0 0 #FFFFFF; border: 1px solid #CCCCCC; color: #4284B0; font: bold 1em Arial,Sans-serif; margin: 0; padding: 5px 3px; }
+
+
+
 
 /* #Media Queries
 ================================================== */
