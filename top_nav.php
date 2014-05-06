@@ -7,16 +7,16 @@
 						<span><a href="/apt2">Home</a></span>
 					</li>
 					<li class="<?= $active=='funds'?'active':''?>" >
-						<span><a href="funds.php">Trust Funds</a></span>
+						<span><a href="funds">Trust Funds</a></span>
 					</li>
 					<li class="<?= $active=='activities'?'active':''?>" >
-						<span><a href="activities.php">Activities</a></span>
+						<span><a href="activities">Activities</a></span>
 					</li>
 					<li class="<?= $active=='members'?'active':''?>" >
-						<span><a href="members.php">Our Members</a></span>
+						<span><a href="members">Our Members</a></span>
 					</li>
 					<li class="<?= $active=='contact'?'active':''?>" >
-						<span><a href="contact.php">Contact Us</a></span>
+						<span><a href="contact">Contact Us</a></span>
 					</li>
 					<li class="<?= $active=='gallery'?'active':''?>" >
 						<span><a href="#">Gallery</a></span>

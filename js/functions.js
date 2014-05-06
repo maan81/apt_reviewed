@@ -28,9 +28,9 @@ $(window).load(function() {
 	$('.flexslider').flexslider({
 		animation: "slide",
 		controlsContainer: ".flexslider",
-		slideshowSpeed: 3000,
+		slideshowSpeed: 7000,
 		directionNav: false,
 		controlNav: true,
-		animationDuration: 900
+		animationDuration: 500
 	});
 });
