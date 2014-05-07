@@ -18,7 +18,7 @@
 		return [$data,$error_msg];
 	}
 
-	$active = 'members'; 
+	$active = 'contact'; 
 	$dname = $demail = $dcomment = '';
 	$error_msg=false;
 
@@ -46,7 +46,7 @@
 		                            $_POST["recaptcha_response_field"]);
 
 		if (!$resp->is_valid) {
-			$error_msg .= "<br/> The reCAPTCHA wasn't entered correctly. Go back and try it again.(reCAPTCHA said: ".$resp->error.")";
+			$error_msg .= "<br/> reCAPTCHA error : ".$resp->error;
 
 		}else if(!$error_msg){
 
