@@ -147,6 +147,10 @@ input.button { background: none repeat scroll 0 0 #FFFFFF; border: 1px solid #CC
 .cnt img { background: none repeat scroll 0 0 #D3D3D3; margin: 5px 5px 25px; padding: 5px; width: 200px; }
 .paginate{ margin-left: 10px; }
 
+#header.header{ text-align: center; font-weight: bold; color: rgb(239, 239, 239); padding-top: 25px; height: 70px; margin-top: 59px;}
+#header .en {font-size: 31px; height: 50px; line-height: 1.5;}
+
+.top-nav{ left: 0; position: fixed; right: 0; top: 0; z-index: 1; }
 
 /* #Media Queries
 ================================================== */

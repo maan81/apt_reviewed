@@ -2,6 +2,7 @@
 <?php include('head.php') ?>		
 
 		<!-- top-nav -->
+		<style type="text/css">.top-nav{position: relative;}</style>
 		<?php include('top_nav.php') ?>
 		<!-- end of top-nav -->
 

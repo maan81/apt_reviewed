@@ -6,8 +6,7 @@
 		<!-- end of top-nav -->
 
 		<!-- header -->
-		<header  id="header">
-		</header>
+		<?php include('header_bar.php') ?>
 		<!-- end of header -->
 
 		<!-- main -->
