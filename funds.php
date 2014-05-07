@@ -1,9 +1,8 @@
+<?php $active = 'funds' ?>
 <?php include('head.php') ?>		
 
 		<!-- top-nav -->
-		<?php 
-			$active = 'funds';
-			include('top_nav.php') ?>
+		<?php include('top_nav.php') ?>
 		<!-- end of top-nav -->
 
 		<!-- header -->

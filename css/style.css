@@ -133,13 +133,13 @@ html, body { height: 100%; }
 
 
 
-form { background-color: #FAFAFA; border: 1px solid #F2F2F2; margin: 10px; padding: 5px;}
+.form { float: right; width: 385px;}
 input { border: 1px solid #EEEEEE; color: #777777; font: 1em Verdana,sans-serif; padding: 3px 5px; }
 label { display: block; font-weight: bold; margin: 5px 0; }
-textarea { border: 1px solid #EEEEEE; color: #777777; display: block; font: 1em Verdana,sans-serif; height: 100px; padding: 3px 5px; width: 300px; }
+textarea { border: 1px solid #EEEEEE; color: #777777; display: block; font: 1em Verdana,sans-serif; height: 160px; padding: 3px 5px; width: 320px; resize:vertical;}
 input.button { background: none repeat scroll 0 0 #FFFFFF; border: 1px solid #CCCCCC; color: #4284B0; font: bold 1em Arial,Sans-serif; margin: 0; padding: 5px 3px; }
-
-
+.address{ width: 280px;}
+.submitted { background: none repeat scroll 0 0 #FFFFFF; border: 1px solid #CCCCCC; color: #808080; font: bold 1em Arial,Sans-serif; padding: 5px 3px; width: 55px; text-align: center;}
 
 
 /* #Media Queries
