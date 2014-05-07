@@ -142,6 +142,12 @@ input.button { background: none repeat scroll 0 0 #FFFFFF; border: 1px solid #CC
 .submitted { background: none repeat scroll 0 0 #FFFFFF; border: 1px solid #CCCCCC; color: #808080; font: bold 1em Arial,Sans-serif; padding: 5px 3px; width: 55px; text-align: center;}
 
 
+.cnt a { padding: 5px; position: relative; }
+.cnt a span { bottom:10px; left: 0; margin-left: auto; margin-right: auto; position: absolute; right: 0; text-align: center; width: 60px; }
+.cnt img { background: none repeat scroll 0 0 #D3D3D3; margin: 5px 5px 25px; padding: 5px; width: 200px; }
+.paginate{ margin-left: 10px; }
+
+
 /* #Media Queries
 ================================================== */
 
