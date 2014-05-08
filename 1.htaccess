@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^album/(.*)/(.*)$ album.php?alb=$1&img=$2
+RewriteRule ^album/(.*)$ album.php?alb=$1
+RewriteRule ^([^\.]+)$ $1.php [NC,L]

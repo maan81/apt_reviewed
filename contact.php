@@ -24,8 +24,8 @@
 								<div class="form"> 
 									<h3>Enter inquires</h3>
 									<form method="post">	
-										<span><?= ($message)?'Message has been submitted.':''?></span>
-										<span><?= $error_msg;?></span>
+										<span class="success"><?= ($message)?'Message has been submitted.':''?></span>
+										<span class="error"><?= $error_msg;?></span>
 										<label>Name <span class="reqd">*</span></label>
 										<input type="text" size="30" placeholder="Enter you name" 
 												name="dname" value="<?=$dname?>" />
@@ -47,7 +47,7 @@
 										?>
 										<br/>
 										<?php if($message){?>
-											<div class="submitted">Submitted</div>
+											<div class="submitted">Submit</div>
 										<?php }else{?>
 											<input type="submit" class="button" value="Submit" name="submit" />		
 										<?php }?>

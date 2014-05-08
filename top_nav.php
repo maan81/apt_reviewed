@@ -19,7 +19,7 @@
 						<span><a href="contact">Contact Us</a></span>
 					</li>
 					<li class="<?= $active=='gallery'?'active':''?>" >
-						<span><a href="gallery">Gallery</a></span>
+						<span><a href="gallery.php">Gallery</a></span>
 					</li>
 				</ul>
 			</div>

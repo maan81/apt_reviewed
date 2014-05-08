@@ -1,6 +1,15 @@
 <?php
-	$dir = 'albums/';
-	$url = 'album';
+	// print_r($_SERVER);die;
+
+	// print_r($_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'].$_SERVER['REDIRECT_URL']);die;
+	// http://localhost/apt2/album
+
+	// print_r(ucwords(preg_replace('/_/',' ',$_GET['alb'])));die;
+	
+	$dir = 'albums/'.$_GET['alb'].'/';
+	$url = $_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'].$_SERVER['REDIRECT_URL'].'s';
+
+	$album_title = ucwords(preg_replace('/_/',' ',$_GET['alb']));
 
 	$images = glob($dir.'*.{jpg,jpeg,png}', GLOB_BRACE);
 
@@ -12,10 +21,11 @@
 
 	foreach($images as $key=>$val){
 		$arr = array();
+
 		$arr['ext']   = end(explode('.', $val));
 		$arr['image'] = preg_replace("/\\.[^.\\s]{3,4}$/", "", $val);
 		$arr['title'] = ucwords(strtolower(implode(' ',explode('_',preg_replace("/albums\//","",$arr['image'])))));
-		$arr['link']  = $url.'?alb='.strtolower(preg_replace('/ /','_',strtolower($arr['title'])));
+		$arr['link']  = $url.'/'.strtolower(preg_replace('/ /','_',strtolower($arr['title']))).'.'.$arr['ext'];
 		// $arr['link']  = strtolower(preg_replace('/ /','_',strtolower($arr['title'])));
 
 		$images[$key] = $arr;
@@ -25,9 +35,9 @@
 	// print_r($images);
 	// echo '</pre>';
 	// die;
+	$active='gallery';
 ?>
 
-<?php $active = 'gallery' ?>
 <?php include('head.php') ?>		
 
 		<!-- top-nav -->
@@ -50,62 +60,29 @@
 						<div class="content">
 							<div class="cnt">
 							
-								<h3>Photo Albums</h3>
-								
+								<h3><?= $album_title ?></h3>
+
+<script type="text/javascript" src="js/colorbox/jquery.colorbox-min.js"></script>
+<link rel="stylesheet" type="text/css" href="js/colorbox/colorbox.css">
+<script type="text/javascript">
+			$(document).ready(function(){
+				$(".group1").colorbox({rel:'group1'});
+			});
+			</script>
+
 								<div class="gallery">
 									<?php foreach($images as $key=>$val):?>
-										<a href="<?=$val['link']?>">
+										<a class="group1" href="<?=$val['link']?>">
 											<img src="<?=$val['image'].'.'.$val['ext']?>">
-											<span><?=$val['title']?></span>
 										</a>
 									<?php endforeach;?>
-									<!-- 									
-											<a href="gallery/event_1">
-												<img src="images/000059_tgkoy_9.jpg">
-												<span>Event !</span>
-											</a>
-											<a href="gallery/event_2">
-												<img src="images/000059_tgkoy_9.jpg">
-												<span>Event 2</span>
-											</a>
-											<a href="gallery/event_1">
-												<img src="images/000059_tgkoy_9.jpg">
-												<span>Event 3</span>
-											</a>
-											<a href="gallery/event_1">
-												<img src="images/000059_tgkoy_9.jpg">
-												<span>Event 4</span>
-											</a>
-											<a href="gallery/event_1">
-												<img src="images/000059_tgkoy_9.jpg">
-												<span>Event 5</span>
-											</a>
-											<a href="gallery/event_1">
-												<img src="images/000059_tgkoy_9.jpg">
-												<span>Event 6</span>
-											</a>
-											<a href="gallery/event_1">
-												<img src="images/000059_tgkoy_9.jpg">
-												<span>Event 7</span>
-											</a>
-											<a href="gallery/event_1">
-												<img src="images/000059_tgkoy_9.jpg">
-												<span>Event 8</span>
-											</a>
-											<a href="gallery/event_1">
-												<img src="images/000059_tgkoy_9.jpg">
-												<span>Event 9</span>
-											</a>
-										 -->								
-								</div>
-								<!-- 
 									<span class="paginate">
 									    <span class="current" style="">1</span>
 									    <a href="">2</a>
 									    <a href="">3</a>
 									    <a href="">4</a>
 									</span>
-								-->
+								</div>
 							</div>
 
 						</div>

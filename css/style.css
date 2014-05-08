@@ -14,7 +14,7 @@ body {
 /*font-family: 'Ubuntu', sans-serif;*/
 
 a { color: #067aa7; text-decoration: none; cursor: pointer; }
-a:hover { text-decoration: underline; }
+a:hover { text-decoration: none; }
 a img { border: 0; }
 a.view { background: url(images/bullet.png) no-repeat 0 10px; padding-left: 8px; font-size: 10px; float: right;  }
 
@@ -139,18 +139,21 @@ label { display: block; font-weight: bold; margin: 5px 0; }
 textarea { border: 1px solid #EEEEEE; color: #777777; display: block; font: 1em Verdana,sans-serif; height: 160px; padding: 3px 5px; width: 320px; resize:vertical;}
 input.button { background: none repeat scroll 0 0 #FFFFFF; border: 1px solid #CCCCCC; color: #4284B0; font: bold 1em Arial,Sans-serif; margin: 0; padding: 5px 3px; }
 .address{ width: 280px;}
-.submitted { background: none repeat scroll 0 0 #FFFFFF; border: 1px solid #CCCCCC; color: #808080; font: bold 1em Arial,Sans-serif; padding: 5px 3px; width: 55px; text-align: center;}
+.submitted { background: none repeat scroll 0 0 #FFFFFF; border: 1px solid #CCCCCC; color: #808080; font: bold 1em Arial,Sans-serif; padding: 6px 4px; width: 55px; text-align: center; }
 
 
-.cnt a { padding: 5px; position: relative; }
-.cnt a span { bottom:10px; left: 0; margin-left: auto; margin-right: auto; position: absolute; right: 0; text-align: center; width: 60px; }
-.cnt img { background: none repeat scroll 0 0 #D3D3D3; margin: 5px 5px 25px; padding: 5px; width: 200px; }
+.cnt .gallery a { padding: 5px; position: relative; }
+.cnt .gallery a span { bottom:10px; left: 0; margin-left: auto; margin-right: auto; position: absolute; right: 0; text-align: center; width: 60px; }
+.cnt .gallery img { background: none repeat scroll 0 0 #D3D3D3; margin: 5px 5px 25px; padding: 5px; width: 200px; }
 .paginate{ margin-left: 10px; }
+.paginate span, .paginate a { display: inline-block; width: 15px; }
 
 #header.header{ text-align: center; font-weight: bold; color: rgb(239, 239, 239); padding-top: 25px; height: 70px; margin-top: 59px;}
 #header .en {font-size: 31px; height: 50px; line-height: 1.5;}
 
 .top-nav{ left: 0; position: fixed; right: 0; top: 0; z-index: 1; }
+.error{ color: #a00;}
+.success{ color: #0a0;}
 
 /* #Media Queries
 ================================================== */
