@@ -32,15 +32,10 @@
 					<div class="slider-holder">
 						<div class="flexslider">
 							<ul class="slides">
-								<li><img src="css/images/slide-img.png" alt="" /></li>
-							
-								<li><img src="css/images/slide-img.png" alt="" /></li>
-
-								<li><img src="css/images/slide-img.png" alt="" /></li>
-
-								<li><img src="css/images/slide-img.png" alt="" /></li>
-
-								<li><img src="css/images/slide-img.png" alt="" /></li>
+								<li><img src="homepage/000011_lwora_9.jpg" alt="" /></li>
+								<li><img src="homepage/000016_omuat_9.jpg" alt="" /></li>
+								<li><img src="homepage/000071_rgdai_9.jpg" alt="" /></li>
+								<li><img src="homepage/000074_snyws_9.jpg" alt="" /></li>
 							</ul>
 						</div>
 					</div>
