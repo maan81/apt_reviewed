@@ -30,35 +30,39 @@
 							
 								<div class="form"> 
 									<h3>Enter inquires</h3>
-									<form method="post">	
-										<span class="success"><?= ($message)?'Message has been submitted.':''?></span>
-										<span class="error"><?= $error_msg;?></span>
-										<label>Name <span class="reqd">*</span></label>
-										<input type="text" size="30" placeholder="Enter you name" 
-												name="dname" value="<?=$dname?>" />
+									<iframe src="https://docs.google.com/forms/d/1HTO_ytW8KWHWOf7rZsNk9GKcAJ0JTtk3WdbjSkjf2F4/viewform?embedded=true" 
+											width="400" height="550" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+									<!-- 
+										<form method="post">	
+											<span class="success"><?= ($message)?'Message has been submitted.':''?></span>
+											<span class="error"><?= $error_msg;?></span>
+											<label>Name <span class="reqd">*</span></label>
+											<input type="text" size="30" placeholder="Enter you name" 
+													name="dname" value="<?=$dname?>" />
 
-										<label>Email <span class="reqd">*</span></label>
-										<input type="text" size="30" placeholder="Enter your email" 
-												name="demail" value="<?=$demail?>" />
+											<label>Email <span class="reqd">*</span></label>
+											<input type="text" size="30" placeholder="Enter your email" 
+													name="demail" value="<?=$demail?>" />
 
-										<label>Your Comments <span class="reqd">*</span></label>
-										<textarea cols="5" rows="5" placeholder="Enter your coments" name="dcomment"><?=$dcomment?></textarea>
+											<label>Your Comments <span class="reqd">*</span></label>
+											<textarea cols="5" rows="5" placeholder="Enter your coments" name="dcomment"><?=$dcomment?></textarea>
 
-										<br/>
-										<?php	
-											if(!$message){
-												require_once('recaptchalib.php');
-												$publickey = "6LeiH_MSAAAAANcfkpJK9hSVGZvvSA4irKwuDVcu ";
-												echo recaptcha_get_html($publickey);
-											}
-										?>
-										<br/>
-										<?php if($message){?>
-											<div class="submitted">Submit</div>
-										<?php }else{?>
-											<input type="submit" class="button" value="Submit" name="submit" />		
-										<?php }?>
-									</form>
+											<br/>
+											<?php	
+												if(!$message){
+													require_once('recaptchalib.php');
+													$publickey = "6LeiH_MSAAAAANcfkpJK9hSVGZvvSA4irKwuDVcu ";
+													echo recaptcha_get_html($publickey);
+												}
+											?>
+											<br/>
+											<?php if($message){?>
+												<div class="submitted">Submit</div>
+											<?php }else{?>
+												<input type="submit" class="button" value="Submit" name="submit" />		
+											<?php }?>
+										</form> 
+									-->
 								</div>
 
 								<div class="address">
