@@ -151,7 +151,7 @@ input.button { background: none repeat scroll 0 0 #FFFFFF; border: 1px solid #CC
 #header.header{ text-align: center; font-weight: bold; color: rgb(239, 239, 239); padding-top: 25px; height: 70px; margin-top: 59px;}
 #header .en {font-size: 31px; height: 50px; line-height: 1.5;}
 
-.top-nav{ left: 0; position: fixed; right: 0; top: 0; z-index: 1; }
+.top-nav{ left: 0; position: fixed; right: 0; top: 0; z-index: 50; }
 .error{ color: #a00;}
 .success{ color: #0a0;}
 
