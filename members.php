@@ -1,4 +1,14 @@
-<?php $active = 'members' ?>
+<?php 
+
+	$active = 'members'; 
+	$isEditor = true;
+
+	if($_POST){
+
+		include('save_page.php');
+	}
+
+?>
 <?php include('head.php') ?>		
 
 		<!-- top-nav -->
@@ -20,52 +30,29 @@
 						<!-- content -->
 						<div class="content">
 							<div class="cnt">
-								<p> The following are the current Executive members of the trust : </p>
-								
-								<br>
-								
+								<?php 
 
-								<ul>
-									<li>
-										Chairperson<br>
-										Prof. Dr. Pushpa Shrestha<br>
-										(Founding Member)
-									</li>
-									<br/>
-									<li>
-										Secretary<br>
-										Mr. Prakash Man Shrestha<br>
-										(Founding Member)
-									</li>
-									<br>
-									<li>
-										Treasurer<br>
-										Mr. Vikash Man Shrestha<br>
-										(Founding Member)
-									</li>
-									<br>
-									<li>
-										Joint-Secretary<br>
-										Mrs. Jayanti Shrestha<br>
-										(Founding Member)
-									</li>
-									<br>
-									<li>
-										Joint-Secretary<br>
-										Mrs. Prami Shrestha<br>
-										(Founding Member)
-									</li>
-									<br>
-									<li>
-										Member<br>
-										Mrs. Mala Rajbhandari Shrestha
-									</li>
-									<br>
-									<li>
-										Member<br>
-										Mr. Pranij Man Shrestha
-									</li>
-								</ul>
+									$txt = file_get_contents('page/members.php');
+
+									if(isset($isEditor)&&$isEditor){
+									
+										echo '<style type="text/css">'.
+												'body.main{padding-top: 30px !important;}'.
+												'.main .content{width: 720px;}'.
+											'</style>';
+
+										echo '<form method="POST">'.
+												'<textarea class="ckeditor" name="editor1">'.
+													htmlentities($txt).
+												'</textarea>'.
+											'</form>';
+									
+									}else{
+	
+										echo $txt;
+	
+									}
+								?>
 							</div>
 						</div>
 						<!-- end of content -->

@@ -8,6 +8,12 @@
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
 	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all" />
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css' />
+
+
+<?php if(isset($isEditor)&& $isEditor ){?>
+	<script src="ckeditor/ckeditor.js"></script>
+	<!-- <link rel="stylesheet" href="ckeditor/sample.css"> -->
+<?php } ?>
 	
 	<script src="js/jquery-1.8.0.min.js" type="text/javascript"></script>
 	<!--[if lt IE 9]>

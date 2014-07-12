@@ -1,4 +1,14 @@
-<?php $active = 'funds' ?>
+<?php 
+
+	$active = 'funds'; 
+	$isEditor = true;
+
+	if($_POST){
+
+		include('save_page.php');
+	}
+
+?>
 <?php include('head.php') ?>		
 
 		<!-- top-nav -->
@@ -20,28 +30,29 @@
 						<!-- content -->
 						<div class="content">
 							<div class="cnt">
-							
-								<h3>Trust Funds</h3>
+								<?php 
 
-								<p>The Trust funds is generated from contributions made by the founder members.</p>
+									$txt = file_get_contents('page/funds.php');
 
-								<br>
-								<h3>Funds Increases</h3>
+									if(isset($isEditor)&&$isEditor){
+									
+										echo '<style type="text/css">'.
+												'body.main{padding-top: 30px !important;}'.
+												'.main .content{width: 720px;}'.
+											'</style>';
 
-								<ul>
-									<li>The Principal fund is invested in  fixed deposit and half 
-										of the interest earned form it is deposited back in the principal
-										amount.</li>
-									<li>The Trust can accept contributions made by instutions/organizations 
-										without any conditions attached</li>
-								</ul>
-
-								<br>
-								<h3>Contributing Funds</h3>
-
-								<p>Only half of the interest earned will be contributed as a token to the 
-								individuals/institutions/organizations.</p>
-							
+										echo '<form method="POST">'.
+												'<textarea class="ckeditor" name="editor1">'.
+													htmlentities($txt).
+												'</textarea>'.
+											'</form>';
+									
+									}else{
+	
+										echo $txt;
+	
+									}
+								?>
 							</div>
 
 						</div>

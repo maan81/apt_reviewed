@@ -4,7 +4,7 @@
 				<span class="top-nav-shadow"></span>
 				<ul>
 					<li class="<?= $active=='home'?'active':''?>" >
-						<span><a href="/apt2">Home</a></span>
+						<span><a href="/apt">Home</a></span>
 					</li>
 					<li class="<?= $active=='funds'?'active':''?>" >
 						<span><a href="funds">Trust Funds</a></span>
