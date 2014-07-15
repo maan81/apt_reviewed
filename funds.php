@@ -1,12 +1,7 @@
 <?php 
 
 	$active = 'funds'; 
-	$isEditor = true;
-
-	if($_POST){
-
-		include('save_page.php');
-	}
+	require('init.php');
 
 ?>
 <?php include('head.php') ?>		
@@ -25,6 +20,8 @@
 			<!-- shell -->
 			<div class="shell">
 				<div class="container">
+
+					<?=$logout_link?>
 
 					<section class="blog">
 						<!-- content -->

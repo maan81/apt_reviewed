@@ -1,12 +1,7 @@
 <?php 
 
 	$active = 'home'; 
-	$isEditor = true;
-
-	if($_POST){
-
-		include('save_page.php');
-	}
+	require('init.php');
 
 ?>
 <?php include('head.php') ?>		
@@ -34,7 +29,7 @@
 						<p>
 							<span class="mobile">Education is the main key to development </span>
 						</p>
-						<a href="#" class="blue-btn">LEARN MORE</a>
+						<!-- <a href="#" class="blue-btn">LEARN MORE</a> -->
 					</div>
 					<!-- end of header-cnt -->
 					
@@ -64,6 +59,7 @@
 			<!-- shell -->
 			<div class="shell">
 				<div class="container">
+
 					<!-- testimonial -->
 					<section class="testimonial">
 						<p>
@@ -74,6 +70,8 @@
 						</p>
 					</section>
 					<!-- testimonial -->
+
+					<?=$logout_link?>
 
 					<section class="blog">
 						<!-- content -->
